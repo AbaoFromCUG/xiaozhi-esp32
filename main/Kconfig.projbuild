@@ -499,6 +499,11 @@ choice BOARD_TYPE
         depends on IDF_TARGET_ESP32S3
     config BOARD_TYPE_ZHENGCHEN_CAM_ML307
         bool "征辰科技AI Camera(ML307)"
+    config BOARD_TYPE_ZHENGCHEN_EYE
+        bool "征辰科技AI-EYE"
+        depends on IDF_TARGET_ESP32S3
+        select LV_USE_GIF
+        select LV_GIF_CACHE_DECODE_DATA
 	depends on IDF_TARGET_ESP32S3
     config BOARD_TYPE_MINSI_K08_DUAL
         bool "敏思科技K08(DUAL)"
@@ -686,6 +691,37 @@ choice DISPLAY_ESP32S3_TOUCH_LCD_1_85C
         bool "version 2.0"
 endchoice
 
+choice DISPLAY_ZHENGCHEN_EYE
+    depends on BOARD_TYPE_ZHENGCHEN_EYE
+    prompt "ZHENGCHEN_EYE LCD Type"
+    default USE_LCD_160X160_YELLOW
+    help
+        屏幕类型选择
+    config USE_NOLCD
+        bool "不使用屏幕"
+    config USE_LCD_240X240_YELLOW
+        bool "GC9A01, 分辨率240*240, 圆屏 (标准小黄脸)"
+    config USE_LCD_160X160_YELLOW
+        bool "GC9D01, 分辨率160*160, 圆屏 (标准小黄脸)"
+    config USE_LCD_240X240_COLORFUL
+        bool "GC9A01, 分辨率240*240, 圆屏 (多色表情)"
+    config USE_LCD_160X160_COLORFUL
+        bool "GC9D01, 分辨率160*160, 圆屏 (多色表情)"
+endchoice
+
+choice NET_TYPE_ZHENGCHEN_EYE
+    depends on BOARD_TYPE_ZHENGCHEN_EYE
+    prompt "ZHENGCHEN_EYE NET Type"
+    default USE_WIFI
+    help
+        网络类型选择
+    config USE_4G
+        bool "仅仅4G网络"
+    config USE_WIFI
+        bool "仅仅WiFi网络"
+    config USE_4G_WIFI
+        bool "兼容4G和WiFi网络"
+endchoice
 
 choice DISPLAY_STYLE
     prompt "Select display style"

@@ -742,9 +742,7 @@ def get_emoji_collection_path(default_emoji_collection, xiaozhi_fonts_path, proj
     emoji_path = os.path.join(xiaozhi_fonts_path, 'gif', default_emoji_collection)
     if os.path.exists(emoji_path):
         return emoji_path
-    
-    print(f"Warning: Emoji collection directory not found in png/ or gif/: {default_emoji_collection}")
-    return None
+    return default_emoji_collection
 
 
 def build_assets_integrated(wakenet_model_paths, multinet_model_paths, text_font_path, emoji_collection_path, extra_files_path, output_path, multinet_model_info=None):

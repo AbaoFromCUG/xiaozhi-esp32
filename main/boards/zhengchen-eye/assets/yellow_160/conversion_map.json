@@ -1,0 +1,32 @@
+{
+  "source_pack": "/home/abao/Documents/xiaozhi/emoji/emoji-animation-pack_103030",
+  "output_dir": "main/boards/zhengchen-eye/assets/yellow_160",
+  "output_format": "gif",
+  "resolution": "160x160",
+  "lottieconverter_option": "24",
+  "color_table": "global",
+  "postprocess": "magick input.gif -coalesce +remap output.gif",
+  "emotion_to_source": {
+    "angry": "Angry Emoji-3950995.lottie.json",
+    "confident": "Sunglasses Emoji-3951030.lottie.json",
+    "confused": "Confused Emoji-3951055.lottie.json",
+    "cool": "Cool Emoji-3951074.lottie.json",
+    "crying": "Crying Emoji-3951143.lottie.json",
+    "delicious": "Yum Emoji-3951132.lottie.json",
+    "embarrassed": "Blushed Emoji-3951154.lottie.json",
+    "funny": "Funny Emoji-3951138.lottie.json",
+    "happy": "Happy Emoji-3951076.lottie.json",
+    "kissy": "Kiss Emoji-3951150.lottie.json",
+    "laughing": "Laughing Emoticon-3951129.lottie.json",
+    "loving": "Loving Face-3950946.lottie.json",
+    "neutral": "Expressionless Emoji-3951173.lottie.json",
+    "relaxed": "Slight Smile-3951123.lottie.json",
+    "sad": "Sad Emoji-3951164.lottie.json",
+    "shocked": "Shocked Emoji-3951179.lottie.json",
+    "silly": "Tongue Out-3951137.lottie.json",
+    "sleepy": "Sleeping Emoji-3951135.lottie.json",
+    "surprised": "Surprised Emoji-3951000.lottie.json",
+    "thinking": "Thinking Emoji-3951171.lottie.json",
+    "winking": "Winking Emoji-3951130.lottie.json"
+  }
+}
