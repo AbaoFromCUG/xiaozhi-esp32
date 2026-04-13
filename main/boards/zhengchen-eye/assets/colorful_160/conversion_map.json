@@ -1,0 +1,32 @@
+{
+  "source_pack": "/home/abao/Documents/xiaozhi/emoji/smiley-animation-pack_245323",
+  "output_dir": "main/boards/zhengchen-eye/assets/colorful_160",
+  "output_format": "gif",
+  "resolution": "160x160",
+  "lottieconverter_option": "24",
+  "color_table": "global",
+  "postprocess": "magick input.gif -coalesce +remap output.gif",
+  "emotion_to_source": {
+    "angry": "Angry Emoji-8689827.lottie.json",
+    "confident": "Cool Smiley-8689797.lottie.json",
+    "confused": "Bemused Face-8689834.lottie.json",
+    "cool": "Cool Smiley-8689797.lottie.json",
+    "crying": "Tearful Emoji-8689812.lottie.json",
+    "delicious": "Yummy Emoji-8689815.lottie.json",
+    "embarrassed": "Awkward Smiley-8689824.lottie.json",
+    "funny": "Crazy Emoji-8689829.lottie.json",
+    "happy": "Happy Emoji-8689818.lottie.json",
+    "kissy": "Kiss Smiley-8689810.lottie.json",
+    "laughing": "Laughing Emoji-8689821.lottie.json",
+    "loving": "Heart Eyes-8689796.lottie.json",
+    "neutral": "Bored Face-8689805.lottie.json",
+    "relaxed": "Smiley Emoji-8689798.lottie.json",
+    "sad": "Sad Emoji-8689811.lottie.json",
+    "shocked": "Shocked Emoji-8689816.lottie.json",
+    "silly": "Silly Smiley-8689813.lottie.json",
+    "sleepy": "Napping Emoji-8689804.lottie.json",
+    "surprised": "Surprised Face-8689795.lottie.json",
+    "thinking": "Suspicious Face-8689801.lottie.json",
+    "winking": "Winking Emoji-8689848.lottie.json"
+  }
+}
