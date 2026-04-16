@@ -786,18 +786,23 @@ choice WAKE_WORD_TYPE
 endchoice
 
 config CUSTOM_WAKE_WORD
-    string "Custom Wake Word"
+    string "Custom Wake Word(s)"
     default "xiao tu dou"
     depends on USE_CUSTOM_WAKE_WORD
     help
-        Custom Wake Word, use pinyin for Chinese, separated by spaces
+        Custom wake word command(s). Use pinyin for Chinese words.
+        You can configure multiple commands by separating each command with '|'.
+        Example: "xiao tu dou|ni hao xiao zhi"
 
 config CUSTOM_WAKE_WORD_DISPLAY
-    string "Custom Wake Word Display"
+    string "Custom Wake Word Display(s)"
     default "小土豆"
     depends on USE_CUSTOM_WAKE_WORD
     help
-        Greeting sent to the server after wake word detection
+        Display text sent to the server after wake word detection.
+        You can configure multiple display texts by separating each text with '|'.
+        The number of display texts should match CUSTOM_WAKE_WORD items.
+        Example: "小土豆|你好小智"
 
 config CUSTOM_WAKE_WORD_THRESHOLD
     int "Custom Wake Word Threshold (%)"
